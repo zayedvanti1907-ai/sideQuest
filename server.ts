@@ -54,7 +54,7 @@ async function startServer() {
 
   app.get("/api/leads", (req, res) => {
     const passkey = req.headers["x-admin-passkey"];
-    const expectedPasskey = process.env.ADMIN_PASSKEY || "sidequest-admin-123";
+    const expectedPasskey = process.env.ADMIN_PASSKEY || "side2026";
 
     if (passkey !== expectedPasskey) {
       return res.status(401).json({ error: "Unauthorized" });
